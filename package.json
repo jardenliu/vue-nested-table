@@ -1,0 +1,76 @@
+{
+  "name": "vue-nested-table",
+  "version": "0.0.1-alpha",
+  "main": "./dist/vue-nested-table.common.js",
+  "description": "a lightweight and high quality nested table component for Vue 2.x",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lib": "cross-env NODE_BUILD_SIGN=lib vue-cli-service build --target lib --name vue-nested-table --dest dist packages/index.ts",
+    "lint": "vue-cli-service lint",
+    "test": "echo 'test is comming soon~'",
+    "test:unit": "vue-cli-service test:unit",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-add": "lint-staged",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "{test,src}/**/*.{ts}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
+    "@types/chai": "^4.1.0",
+    "@types/mocha": "^5.2.4",
+    "@vue/cli-plugin-babel": "^4.4.6",
+    "@vue/cli-plugin-typescript": "^4.4.6",
+    "@vue/cli-plugin-unit-mocha": "^4.4.6",
+    "@vue/cli-service": "^4.4.6",
+    "@vue/test-utils": "^1.0.3",
+    "@vuepress/core": "1.5.0",
+    "babel-runtime": "^6.26.0",
+    "chai": "^4.1.2",
+    "core-js": "^2.6.11",
+    "cross-env": "^5.2.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.9.7",
+    "vue": "^2.6.6",
+    "vue-class-component": "^6.0.0",
+    "vue-property-decorator": "^7.0.0",
+    "vue-router": "^3.3.4",
+    "vue-template-compiler": "^2.5.21",
+    "vuepress": "1.5.0",
+    "vuepress-plugin-code-doc": "0.0.1",
+    "vuepress-plugin-typescript": "^0.3.0",
+    "vuepress-theme-antdocs": "^1.1.1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

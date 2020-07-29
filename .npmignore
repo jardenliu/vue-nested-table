@@ -1,0 +1,5 @@
+examples/
+public/
+tests/
+babel.config.js
+vue.config.js

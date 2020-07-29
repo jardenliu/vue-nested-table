@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "types": [
+      "webpack-env",
+      "mocha",
+      "chai"
+    ],
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "vue-nested-table": [
+        "packages/index.ts"
+      ],
+      "vue-nested-table/*": [
+        "packages/*"
+      ]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ],
+    "typeRoots": ["node_modules/@types", "src/typings"]
+
+  },
+  "include": [
+    "examples/**/*.ts",
+    "examples/**/*.tsx",
+    "examples/**/*.vue",
+    "packages/**/*.ts",
+    "packages/**/*.tsx",
+    "packages/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

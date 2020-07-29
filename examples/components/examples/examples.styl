@@ -1,0 +1,40 @@
+/**
+ * @name examples
+ * @description examples
+ * @createDate 7/29/2020, 11:19:32 AM
+ */
+
+ $top-bar-height=60px
+
+ .nested-table-examples
+     width 100vw
+     padding-top  $top-bar-height
+     display flex
+     flex-direction column
+     height 100vh
+
+
+.topbar
+    display flex
+    align-items center
+    justify-content space-between
+    height $top-bar-height
+    padding 0 20px
+    border-bottom thin solid #e8e8e8
+    box-shadow 0 2px 4px 0 rgba(0,0,0,0.08)
+    position absolute
+    width 100vw
+    top 0
+    z-index 2000
+
+.main-container
+    display flex
+    height "calc(100% - %s)" %$top-bar-height
+    flex 1
+
+
+.main-view
+    background #f5f5f5
+    width 100%
+    display flex
+    flex-direction column
