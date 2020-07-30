@@ -21,8 +21,8 @@ footerWrap:
   items:
   - title: VuePress
     link: https://vuepress.vuejs.org/zh/
-  - title: Ant Design Vue
-    link: https://antdv.com/
+  - title: AntDocs
+    link: https://antdocs.seeyoz.cn/
 - headline: 👨 作者
   items:
   - title: 掘金
