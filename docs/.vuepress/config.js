@@ -1,13 +1,11 @@
 const { name, description } = require('../../package.json')
-const {
-  resolve
-} = require('path')
+const { resolve } = require('path')
 const CodeDocPlugin = require('vuepress-plugin-code-doc')
 
 module.exports = {
   title: 'vue-nested-table',
   base: `/${name}/`,
-  description,
+  description: 'a lightweight and high quality nested table component',
   theme: 'antdocs',
   plugins: [
     [
@@ -15,14 +13,23 @@ module.exports = {
       {
         tsLoaderOptions: {
           // All options of ts-loader
-        },
-      },
+        }
+      }
     ],
-    [CodeDocPlugin, {}],
+    [CodeDocPlugin, {}]
   ],
   configureWebpack: config => {
-    config.resolve.extensions = ['.ts', '.tsx', '.vue', '.mjs', '.js', '.jsx', '.json', '.wasm']
+    config.resolve.extensions = [
+      '.ts',
+      '.tsx',
+      '.vue',
+      '.mjs',
+      '.js',
+      '.jsx',
+      '.json',
+      '.wasm'
+    ]
     config.resolve.modules.push(resolve(__dirname, 'examples'))
     config.resolve.alias['vue-nested-table'] = resolve(__dirname, 'packages')
-  },
+  }
 }
