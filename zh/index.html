@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>vue-nested-table</title>
+    <meta name="description" content="">
+    <meta name="generator" content="VuePress 1.5.0">
+    
+    <meta name="description" content="高质量的Vue.js嵌套表格组件">
+    <link rel="preload" href="/vue-nested-table/assets/css/0.styles.e85b692f.css" as="style"><link rel="preload" href="/vue-nested-table/assets/js/app.639df402.js" as="script"><link rel="preload" href="/vue-nested-table/assets/js/3.bdb13645.js" as="script"><link rel="preload" href="/vue-nested-table/assets/js/7.6674168d.js" as="script"><link rel="prefetch" href="/vue-nested-table/assets/js/4.f44531b6.js"><link rel="prefetch" href="/vue-nested-table/assets/js/5.fad31ad3.js"><link rel="prefetch" href="/vue-nested-table/assets/js/6.0025164e.js"><link rel="prefetch" href="/vue-nested-table/assets/js/vendors~docsearch.34071b42.js">
+    <link rel="stylesheet" href="/vue-nested-table/assets/css/0.styles.e85b692f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="ant-row"><div class="sidebar-button"><i aria-label="icon: bars" class="anticon anticon-bars"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="bars" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M912 192H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM104 228a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0z"></path></svg></i> <span></span></div> <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-6 ant-col-lg-5 ant-col-xl-5 ant-col-xxl-4"><a href="/vue-nested-table/zh/" aria-current="page" class="router-link-exact-active router-link-active no-logo home-link"><!----> <span class="site-name">vue-nested-table</span></a> <div class="search-box mobile-search"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></div> <div class="ant-col ant-col-xs-0 ant-col-sm-0 ant-col-md-18 ant-col-lg-19 ant-col-xl-19 ant-col-xxl-20"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><ul role="menu" id="nav" class="ant-menu ant-menu-horizontal ant-menu-root ant-menu-light"><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item ant-menu-item-selected"><a href="/vue-nested-table/zh/" aria-current="page" class="router-link-exact-active router-link-active">
+          首页
+        </a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="/vue-nested-table/zh/docs/">
+          文档
+        </a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="https://github.com/jardenliu/vue-nested-table" target="_blank">
+          Github
+          <i aria-label="icon: link" class="anticon anticon-link"><svg viewBox="64 64 896 896" focusable="false" data-icon="link" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M574 665.4a8.03 8.03 0 0 0-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 0 0-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 0 0 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0 59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 0 0 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1zM610.1 372.3a8.03 8.03 0 0 0-11.3 0L372.3 598.7a8.03 8.03 0 0 0 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z"></path></svg></i></a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-submenu-selected"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>
+          选择语言
+        </span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="visibility:hidden;position:absolute;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li></ul> <!----></nav></div></div> <!----></header> <aside class="sidebar"><!----> <!----></aside> <div><main aria-labelledby="main-title" class="home"><header class="hero"><img src="/vue-nested-table/assets/logo.png" alt="hero" class="hero-logo"> <h1 id="main-title">
+        vue-nested-table
+      </h1> <p class="description">
+        高质量的Vue.js嵌套表格组件
+      </p> <button type="button" class="ant-btn ant-btn-primary ant-btn-round ant-btn-lg ant-btn-background-ghost"><a href="/vue-nested-table/guide/">
+          快速上手
+        </a></button> <!----></header> <div class="features"><div class="feature"><h2>无限嵌套</h2> <p>不限制嵌套层数以及支持多个子表。</p></div><div class="feature"><h2>独立表头</h2> <p>每级表格独立享有自己的个性化表头。</p></div><div class="feature"><h2>高性能</h2> <p>使用无限滚动提升渲染效果，表格渲染懒加载。</p></div></div> <div class="theme-antdocs-content custom content__default"></div></main> <div class="footer"><div class="footer-container"><div class="add-bottom ant-row-flex ant-row-flex-space-around"><div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-6 ant-col-lg-6 ant-col-xl-6"><div><h2>🌁 依赖</h2> <div class="footer-item"><a href="https://github.com/ustbhuangyi/better-scroll" target="_blank">
+                better-scroll
+              </a> <!----> <!----></div></div></div><div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-6 ant-col-lg-6 ant-col-xl-6"><div><h2>🔗 链接</h2> <div class="footer-item"><a href="https://vuepress.vuejs.org/zh/" target="_blank">
+                VuePress
+              </a> <!----> <!----></div><div class="footer-item"><a href="https://antdocs.seeyoz.cn/" target="_blank">
+                AntDocs
+              </a> <!----> <!----></div></div></div><div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-6 ant-col-lg-6 ant-col-xl-6"><div><h2>👨 作者</h2> <div class="footer-item"><a href="https://juejin.im" target="_blank">
+                掘金
+              </a> <!----> <!----></div><div class="footer-item"><a href="https://github.com/jardenliu" target="_blank">
+                github
+              </a> <!----> <!----></div></div></div></div></div> <div class="footer-bottom">MIT Licensed | Copyright (c) 2020 jardenliu 流君酱</div></div></div> <!----></div><div class="global-ui"></div></div>
+    <script src="/vue-nested-table/assets/js/app.639df402.js" defer></script><script src="/vue-nested-table/assets/js/3.bdb13645.js" defer></script><script src="/vue-nested-table/assets/js/7.6674168d.js" defer></script>
+  </body>
+</html>
